@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonies - Faith Reports Network</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Faith Reports Network</h1>
+    <p class="tagline">Igniting You to Walk in Faith</p>
+  </header>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="testimonies.html">Testimonies</a>
+        <a href="resources.html">Resources</a>
+        <a href="faith-journey.html">Faith Journey</a>
+        <a href="testify.html">Testify</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="read.html">Read</a>
+        <a href="about-contact.html">About & Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>Testimonies</h2>
+      <div class="testimony">
+        <h3>How I Found Hope in God</h3>
+        <p>Here’s how God transformed my life during a difficult season...</p>
+        <img src="images/testimony1.jpg" alt="Testimony Image">
+        <audio controls>
+          <source src="audio/testimony1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="testimony">
+        <h3>Delivered from Addiction</h3>
+        <p>This is my story of freedom and redemption...</p>
+        <img src="images/testimony2.jpg" alt="Testimony Image">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; Faith Reports Network</p>
+  </footer>
+
+  <!-- JavaScript for Dropdown Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropbtn = document.querySelector('.dropbtn');
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropbtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('show');
+      });
+      
+      // Close the dropdown if clicked outside
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

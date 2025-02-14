@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Journey - Faith Reports Network</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Faith Reports Network</h1>
+    <p class="tagline">Igniting You to Walk in Faith</p>
+  </header>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="testimonies.html">Testimonies</a>
+        <a href="resources.html">Resources</a>
+        <a href="faith-journey.html">Faith Journey</a>
+        <a href="testify.html">Testify</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="read.html">Read</a>
+        <a href="about-contact.html">About & Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>Faith Journey</h2>
+      <p>Explore stories of spiritual growth and transformation.</p>
+      <div class="grid-2col">
+        <article class="testimony">
+          <h3>Finding Peace</h3>
+          <p>How prayer changed my life...</p>
+          <a href="#" class="button">Read More</a>
+        </article>
+        <article class="testimony">
+          <h3>Trusting God</h3>
+          <p>Learning to rely on faith in tough times...</p>
+          <a href="#" class="button">Read More</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; Faith Reports Network</p>
+  </footer>
+
+  <!-- JavaScript for Dropdown Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropbtn = document.querySelector('.dropbtn');
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropbtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('show');
+      });
+      
+      // Close the dropdown if clicked outside
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+          }
+        }
+      };
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Faith Reports Network</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Faith Reports Network</h1>
+    <p class="tagline">Igniting You to Walk in Faith</p>
+  </header>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="testimonies.html">Testimonies</a>
+        <a href="resources.html">Resources</a>
+        <a href="faith-journey.html">Faith Journey</a>
+        <a href="testify.html">Testify</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="read.html">Read</a>
+        <a href="about-contact.html">About & Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>Faith Resources</h2>
+      <div class="resource">
+        <h3>Bible Study Tools</h3>
+        <ul>
+          <li><a href="https://www.biblegateway.com/" target="_blank">Bible Gateway</a></li>
+          <li><a href="https://www.youversion.com/" target="_blank">YouVersion Bible App</a></li>
+        </ul>
+      </div>
+      <div class="resource">
+        <h3>Downloadable Guides</h3>
+        <p><a href="downloads/prayer-guide.pdf" download>Download Prayer Guide (PDF)</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; Faith Reports Network</p>
+  </footer>
+
+  <!-- JavaScript for Dropdown Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropbtn = document.querySelector('.dropbtn');
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropbtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('show');
+      });
+      
+      // Close the dropdown if clicked outside
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+          }
+        }
+      };
+    });
+  </script>
+</body>
+</html>

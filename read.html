@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read - Faith Reports Network</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Faith Reports Network</h1>
+    <p class="tagline">Igniting You to Walk in Faith</p>
+  </header>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="testimonies.html">Testimonies</a>
+        <a href="resources.html">Resources</a>
+        <a href="faith-journey.html">Faith Journey</a>
+        <a href="testify.html">Testify</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="read.html">Read</a>
+        <a href="about-contact.html">About & Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>Read Articles</h2>
+      <article class="post">
+        <h3>5 Ways to Strengthen Your Faith</h3>
+        <p>Faith is like a muscle—it grows stronger with practice. Here are five daily habits to build your faith...</p>
+      </article>
+      <article class="post">
+        <h3>Lessons from the Life of David</h3>
+        <p>David’s journey teaches us about courage, repentance, and trusting God...</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Faith Reports Network</p>
+  </footer>
+
+  <!-- JavaScript for Dropdown Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropbtn = document.querySelector('.dropbtn');
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropbtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('show');
+      });
+      
+      // Close the dropdown if clicked outside
+      window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

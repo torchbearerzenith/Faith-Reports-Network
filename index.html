@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Faith Reports Network</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Faith Reports Network</h1>
+    <p class="tagline">Igniting You to Walk in Faith</p>
+  </header>
+
+  <!-- Navigation with Dropdown -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="testimonies.html">Testimonies</a>
+        <a href="resources.html">Resources</a>
+        <a href="faith-journey.html">Faith Journey</a>
+        <a href="testify.html">Testify</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="read.html">Read</a>
+        <a href="about-contact.html">About & Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <!-- Featured Testimonies Section -->
+    <section class="card">
+      <h2>Featured Testimonies</h2>
+      <div class="grid-2col">
+        <article class="testimony">
+          <h3>New Life in Christ</h3>
+          <p>Discover how faith transformed lives...</p>
+          <a href="testimonies.html" class="button">Read More</a>
+        </article>
+        <article class="testimony">
+          <h3>Overcoming Addiction</h3>
+          <p>A journey from darkness to light...</p>
+          <a href="testimonies.html" class="button">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="card">
+      <h2>Join Our Community</h2>
+      <p>Share your story and inspire others.</p>
+      <a href="testify.html" class="button">Testify Now</a>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Faith Reports Network | Colors: Gold (#D4AF37), Army Green (#4B5320)</p>
+  </footer>
+
+  <!-- JavaScript for Dropdown Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropbtn = document.querySelector('.dropbtn');
+      var dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropbtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('show');
+      });
+      
+      // Close the dropdown if clicked outside
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
