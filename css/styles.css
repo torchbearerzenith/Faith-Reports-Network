@@ -3,25 +3,38 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--background); /* #fbfbfe */
+  color: var(--text); /* #050315 */
 }
+
+/* Define Color Variables */
+:root {
+    --text: #050315;
+    --background: #fbfbfe;
+    --primary: #eec616;
+    --secondary: #f0e90d;
+    --accent: #30aeca;
 
 /* Header */
 header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--background); /* #fbfbfe */
   padding: 1rem;
   text-align: center;
 }
 
+header h1 {
+  color: var(--primary); /* #eec616 */
+}
+
 .tagline {
   margin: 0.5rem 0;
+  font-style: italic;
+  color: var(--secondary); /* Secondary color for tagline */
 }
 
 /* Navigation */
 nav {
-  background-color: #333;
+  background-color: var(--secondary); /* #f0e90d */
   padding: 1rem;
 }
 
@@ -32,8 +45,8 @@ nav {
 }
 
 .dropbtn {
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary); /* #f0e90d */
+  color: var(--text); /* #050315 */
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
@@ -43,21 +56,21 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--secondary); /* Secondary color for dropdown */
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #333;
+  color: var(--text); /* Dark text on light background */
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #f1f1f1; /* Keep a light hover background */
 }
 
 .dropdown-content.show {
@@ -73,11 +86,11 @@ nav {
 
 /* Card Component */
 .card {
-  background-color: white;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background-color: var(--background); /* Light background for cards */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Grid Layout for Two Columns */
@@ -91,20 +104,20 @@ nav {
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--primary); /* #eec616 */
+  color: var(--background); /* #fbfbfe, for a nice contrast */
   text-decoration: none;
   border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: var(--secondary); /* #f0e90d */
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary); /* #f0e90d */
+  color: var(--text); /* #050315 */
   text-align: center;
   padding: 1rem;
   position: fixed;
